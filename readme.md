@@ -1,4 +1,4 @@
-# Turnstile (FSM) smart contract
+# Rock Paper Scissors smart contract
 
 A contract for determining the winner between two players in a game of rock paper scissors.
 
