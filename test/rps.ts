@@ -30,15 +30,6 @@ describe("rps contract test suite", () => {
     return receipt
   }
 
-  const pick = async(choice: string) => {
-    const query = rpsClient.createQuery({
-      method: { name: `pick`, args: [choice]},
-    });
-    const receipt = await rpsClient.submitQuery(query);
-    const result = Result.unwrapString(receipt, "ascii")
-    return result
-  }
-
   const getPlayerChoice = async(player: number) => {
     const query = rpsClient.createQuery({
       method: { name: `get-player-${player}-choice`, args: [] },
